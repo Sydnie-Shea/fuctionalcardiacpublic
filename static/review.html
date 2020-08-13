@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <link href="../reviewstyles.css" rel="stylesheet"/>
+    <script src="../sharefeedback.js" defer></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div>
+    
+        <h1 id ="header">Feedback Form</h1><br/>
+        <form action="/_carryOut" method="POST">
+            <textarea id="feedback_text"></textarea><br/>
+            <input type=button id = "feedback" value="Share"/>
+        </form>
+        <p id = "prompt">Would you like to be contacted about these issues?</p>
+        <div id='buttondiv'>           
+            <input type=button id ="feedbackY" value="Yes"/>
+            <input type=button id ="feedbackN" value="No"/>
+        </div>
+        <form id ="contact" action="/_carryOut" method="POST">
+            <label for ="phone">Phone Number</label>
+            <input type="text" id ="phone"/>
+            <label for ="email">Email Address</label>
+            <input type="text" id ="email"/>
+            <input type="button" id ="submit" value="Submit">
+        </form>
+</div>
+</body>
+</html>
